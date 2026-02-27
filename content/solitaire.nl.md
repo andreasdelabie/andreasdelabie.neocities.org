@@ -1,0 +1,4 @@
+---
+title: Solitaire
+layout: solitaire
+---
