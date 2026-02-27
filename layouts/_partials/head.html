@@ -1,0 +1,5 @@
+<meta name="robots" content="noindex,nofollow">
+<meta name="author" content="Andreas Delabie">
+{{ with resources.Get "css/style.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }}

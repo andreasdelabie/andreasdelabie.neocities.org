@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }} :: {{ .Site.Title }}</title>
+    {{ partial "head" }}
+</head>
+<body>
+    <div class="container">
+        {{ partial "menu" }}
+        <main>
+            <section>
+                {{ .Content }}
+                <ul>
+                    {{ range .Pages }}
+                    <li>
+                        <a href="{{ .RelPermalink }}">{{ .Date.Format "2 Jan 2006" }} - {{ .Title }}</a>
+                        <p>{{ .Summary }}</p>
+                    </li>
+                    {{end}}
+                </ul>
+            </section>
+        </main>
+        {{ partial "footer" }}
+    </div>
+</body>
+</html>

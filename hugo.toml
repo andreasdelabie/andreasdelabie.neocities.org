@@ -1,0 +1,8 @@
+baseURL = 'https://andreasdelabie.neocities.org'
+title = 'Andreas Delabie'
+
+[languages]
+  [languages.en]
+    languageCode = 'en'
+  [languages.nl]
+    languageCode = 'nl-BE'

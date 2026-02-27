@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }} :: {{ .Site.Title }}</title>
+    {{ partial "head" }}
+</head>
+<body>
+    <div class="container">
+        {{ partial "menu" }}
+        <main>
+            <section>
+                <h1>{{ .Title }}</h1>
+                {{ .Content }}
+                <p><i>Posted on {{ .Date.Format "2 Jan 2006" }}</i></p>
+                {{ with .Page.Params.Tags }}
+                <h3>Tags:</h3>
+                {{ range . }}
+                <a href='{{ relLangURL "/tags" }}/{{ . }}'>{{ . }}</a>
+                {{ end }}
+                {{ end }}
+            </section>
+        </main>
+        {{ partial "footer" }}
+    </div>
+</body>
+</html>

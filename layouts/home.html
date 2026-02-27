@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Site.Title }}</title>
+    {{ partial "head" }}
+</head>
+<body>
+    <div class="container">
+        {{ partial "menu" }}
+        <main>
+            <section>
+                {{ .Content }}
+            </section>
+        </main>
+        <section>
+            <h2>{{ i18n "My-button" }}:</h2>
+            {{ partial "button" }}
+        </section>
+        <section>
+            <h2>{{ i18n "Other-sites" }}:</h2>
+            {{ partial "buttons" }}
+        </section>
+        {{ partial "footer" }}
+    </div>
+</body>
+</html>
