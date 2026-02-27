@@ -12,6 +12,11 @@
             <section>
                 {{ .Content }}
             </section>
+            <section>
+                {{ with .GetPage "featured-projects" }}
+                {{ .Content }}
+                {{ end }}
+            </section>
         </main>
         <section>
             <h2>{{ i18n "My-button" }}:</h2>
