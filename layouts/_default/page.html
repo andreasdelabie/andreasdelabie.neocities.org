@@ -11,14 +11,19 @@
         <main>
             <section>
                 <h1>{{ .Title }}</h1>
+                <p><i>{{ i18n "Posted-on" }} {{ .Date.Format "2 Jan 2006 15u04" }}</i></p>
                 {{ .Content }}
-                <p><i>Posted on {{ .Date.Format "2 Jan 2006" }}</i></p>
+            </section>
+            <section>
                 {{ with .Page.Params.Tags }}
-                <h3>Tags:</h3>
+                <h2>Tags:</h2>
                 {{ range . }}
                 <a href='{{ relLangURL "/tags" }}/{{ . }}'>{{ . }}</a>
                 {{ end }}
                 {{ end }}
+            </section>
+            <section>
+                {{ partial "disqus.html" . }}
             </section>
         </main>
         {{ partial "footer" }}

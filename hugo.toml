@@ -1,8 +1,13 @@
 baseURL = 'https://andreasdelabie.neocities.org'
 title = 'Andreas Delabie'
+timeZone = 'Europe/Brussels'
 
 [languages]
   [languages.en]
     languageCode = 'en'
   [languages.nl]
     languageCode = 'nl-BE'
+
+[services]
+  [services.disqus]
+    shortname = "andreasdelabie"
