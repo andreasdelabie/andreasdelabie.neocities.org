@@ -1,6 +1,8 @@
 .vscode/
 public/
 resources/
+Adobe After Effects Auto-Save/
+*.aep_AME/
 
 .DS_Store
 .hugo_build.lock

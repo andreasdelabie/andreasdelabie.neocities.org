@@ -1,0 +1,7 @@
+{{ with resources.Get "img/Button.gif" }}
+<img src='https://raw.githubusercontent.com/andreasdelabie/andreasdelabie.neocities.org/refs/heads/main/assets{{ .RelPermalink }}' width="88" height="31" alt="Andreas Delabie's Neocities Button">
+<div>
+    <textarea id="neocities-button"><a href="https://andreasdelabie.neocities.org" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/andreasdelabie/andreasdelabie.neocities.org/refs/heads/main/assets{{ .RelPermalink }}" alt="Andreas Delabie's Neocities Button"></a></textarea>
+    <p>The GIF is pulled from GitHub, so you can hotlink directly!</p>
+</div>
+{{ end }}
