@@ -1,5 +1,11 @@
+# MENU
 Home = 'Home'
 Blog = 'Blog'
 Guestbook = 'Guestbook'
+
+# HEADINGS
 My-button = 'My button'
 Other-sites = 'Other sites'
+
+# PARAGRAPHS
+neocities-button-info = 'The GIF is pulled from GitHub, so you can hotlink directly!'

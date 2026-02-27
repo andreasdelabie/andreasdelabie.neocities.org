@@ -1,5 +1,11 @@
+# MENU
 Home = 'Home'
 Blog = 'Blog'
 Guestbook = 'Gastenboek'
+
+# KOPPEN
 My-button = 'Mijn button'
 Other-sites = 'Andere sites'
+
+# PARAGRAFEN
+neocities-button-info = 'De GIF wordt van GitHub gehaald, dus je mag direct hotlinken!'
