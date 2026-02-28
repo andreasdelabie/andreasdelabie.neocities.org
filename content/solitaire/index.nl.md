@@ -1,4 +1,5 @@
 ---
 title: Solitaire
 layout: solitaire
+date: 2026-02-27T12:23:00
 ---
