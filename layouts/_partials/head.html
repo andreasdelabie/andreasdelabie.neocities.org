@@ -1,4 +1,5 @@
 <meta name="robots" content="noindex,nofollow">
+<title>{{ .Title }} :: {{ .Site.Title }}</title>
 <meta name="author" content="Andreas Delabie">
 {{ with resources.Get "css/style.scss" | toCSS | minify }}
 <link rel="stylesheet" href="{{ .RelPermalink }}">
