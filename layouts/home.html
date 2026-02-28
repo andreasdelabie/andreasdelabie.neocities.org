@@ -12,6 +12,9 @@
                 {{ .Content }}
             </section>
             <section>
+                {{ partial "stats" }}
+            </section>
+            <section>
                 {{ with .GetPage "featured-projects" }}
                 {{ .Content }}
                 {{ end }}
