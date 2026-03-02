@@ -1,7 +1,7 @@
 ---
 title: cs30
 layout: cs30
-date: 2026-02-28T09:00:00
+date: 2026-03-02T11:43:00
 ---
 
 I named my homeserver 'cs30', inspired by the [hacked server in Mr.Robot](https://mrrobot.fandom.com/wiki/Mr._Robot#:~:text=single%20infected%20server%2C-,CS30,-.%20On%20it%2C%20he).
@@ -19,3 +19,10 @@ I named my homeserver 'cs30', inspired by the [hacked server in Mr.Robot](https:
 - Homemade internal documentation site using HUGO
 - [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) — Document management/archive system
 - [Plex](https://www.plex.tv/personal-media-server/)
+
+## Hardware & software:
+- HP EliteDesk 800 G1 SFF
+    - Intel Core i5 4590 (3.3Ghz - 3.7Ghz)
+    - 16GB (mismatched) DDR3 RAM
+    - 240GB SSD
+- Ubuntu Server
