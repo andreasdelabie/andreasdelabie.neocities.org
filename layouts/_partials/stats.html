@@ -1,6 +1,5 @@
 <h2>Stats:</h2>
 <p>{{ i18n "Current-time" }}: <span id="current-time"></span></p>
-<p>{{ i18n "Current-weather" }}: <span id="current-weather"></span></p>
 <p>{{ i18n "Age"}}: <span id="age"></span></p>
 <p>{{ i18n "Days-alive"}}: <span id="days-alive"></span></p>
 {{ with site.GetPage "stats" }}
@@ -23,15 +22,4 @@
         document.getElementById('age').textContent = age;
         document.getElementById('days-alive').textContent = Math.floor((dateToday - dateBirthday) / (1000 * 60 * 60 * 24));;
     }, 500)
-</script>
-
-<script>
-    async function fetchWeather() {
-        const url = 'https://api.open-meteo.com/v1/forecast?latitude=51.09596523584749&longitude=3.833740823134703&current=temperature_2m,precipitation&timezone=auto&forecast_days=1'
-        const response = await fetch(url)
-        const weather = await response.json()
-
-        document.getElementById('current-weather').textContent = weather['current']['temperature_2m'] + weather['current_units']['temperature_2m']
-    }
-    fetchWeather()
 </script>
