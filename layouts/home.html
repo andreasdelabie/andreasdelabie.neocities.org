@@ -6,6 +6,7 @@
 </head>
 <body>
     <div class="container">
+        {{ partial "logo" }}
         {{ partial "menu" }}
         <main>
             <section>
@@ -19,15 +20,15 @@
                 {{ .Content }}
                 {{ end }}
             </section>
+            <section>
+                <h2>{{ i18n "My-button" }}:</h2>
+                {{ partial "neocities-button" }}
+            </section>
+            <section>
+                <h2>{{ i18n "Other-sites" }}:</h2>
+                {{ partial "buttons" }}
+            </section>
         </main>
-        <section>
-            <h2>{{ i18n "My-button" }}:</h2>
-            {{ partial "neocities-button" }}
-        </section>
-        <section>
-            <h2>{{ i18n "Other-sites" }}:</h2>
-            {{ partial "buttons" }}
-        </section>
         {{ partial "footer" }}
     </div>
 </body>

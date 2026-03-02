@@ -44,6 +44,17 @@ section, menu, footer {
     border: 1px dashed var(--grey);
 }
 
+.logo {
+    margin: 25px 10px 15px;
+    text-shadow: 0 0 10px var(--grey);
+    .cursor {
+        animation: blink 1s step-start infinite;
+        @keyframes blink {
+            50% {opacity: 0;}
+        }
+    }
+}
+
 menu {
     display: flex;
     align-items: end;
