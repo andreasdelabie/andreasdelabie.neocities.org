@@ -13,27 +13,27 @@
                 {{ .Content }}
             </section>
             <section>
-                {{ partial "stats" }}
+                {{ partial "widgets/stats" }}
             </section>
             <section>
-                {{ with .GetPage "featured-projects" }}
+                {{ with .GetPage "widgets/featured-projects" }}
                 {{ .Content }}
                 {{ end }}
             </section>
             <section>
                 <h2>{{ i18n "Draw-something-nice" }}:</h2>
-                {{ partial "whiteboard" }}
-                {{ with .GetPage "whiteboard-rules" }}
+                {{ partial "widgets/whiteboard" }}
+                {{ with .GetPage "widgets/whiteboard-rules" }}
                 {{ .Content }}
                 {{ end }}
             </section>
             <section>
                 <h2>{{ i18n "My-button" }}:</h2>
-                {{ partial "neocities-button" }}
+                {{ partial "widgets/neocities-button" }}
             </section>
             <section>
                 <h2>{{ i18n "Other-sites" }}:</h2>
-                {{ partial "buttons" }}
+                {{ partial "widgets/buttons" }}
             </section>
         </main>
         {{ partial "footer" }}

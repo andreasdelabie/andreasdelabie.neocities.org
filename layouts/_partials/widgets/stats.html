@@ -2,7 +2,7 @@
 <p>{{ i18n "Current-time" }}: <span id="current-time"></span></p>
 <p>{{ i18n "Age"}}: <span id="age"></span></p>
 <p>{{ i18n "Days-alive"}}: <span id="days-alive"></span></p>
-{{ with site.GetPage "stats" }}
+{{ with site.GetPage "widgets/stats" }}
     {{ .Content }}
 {{ end }}
 
