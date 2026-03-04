@@ -21,6 +21,13 @@
                 {{ end }}
             </section>
             <section>
+                <h2>{{ i18n "Draw-something-nice" }}:</h2>
+                {{ partial "whiteboard" }}
+                {{ with .GetPage "whiteboard-rules" }}
+                {{ .Content }}
+                {{ end }}
+            </section>
+            <section>
                 <h2>{{ i18n "My-button" }}:</h2>
                 {{ partial "neocities-button" }}
             </section>
