@@ -1,0 +1,149 @@
+<div id="mini-terminal">
+    <div id="terminal-bar">
+        <p>-</p>
+        <p>▫</p>
+        <p id="terminal-close">x</p>
+    </div>
+    <div id="terminal-response">
+        <p>Use 'ls' for view commands.</p>
+    </div>
+    <form id="terminal-form">
+        <input type="text" id="terminal-input" placeholder="$">
+    </form>
+
+    <script>
+        const terminal = document.getElementById('mini-terminal');
+        const bar = document.getElementById('terminal-bar');
+
+        let offsetX = 0;
+        let offsetY = 0;
+        let isDragging = false;
+
+        bar.addEventListener('mousedown', (e) => {
+            e.preventDefault()
+            isDragging = true;
+            offsetX = e.clientX - terminal.offsetLeft;
+            offsetY = e.clientY - terminal.offsetTop;
+        })
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+
+            terminal.style.left = (e.clientX - offsetX) + 'px';
+            terminal.style.top = (e.clientY - offsetY) + 'px';
+        })
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        })
+    </script>
+
+    <script>
+        const closeButton = document.getElementById('terminal-close');
+
+        closeButton.addEventListener('click', (e) => {
+            terminal.style.display = 'none'
+        })
+    </script>
+    
+    <script>
+        const input = document.getElementById('terminal-input');
+        const response = document.getElementById('terminal-response');
+
+        document.getElementById('terminal-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            switch (input.value) {
+                case 'ls':
+                    addLine('ls, clear, crt-overlay, hi');
+                    break;
+                case 'clear':
+                    response.innerHTML = ''
+                    break;
+                case 'hi':
+                    addLine('Hiii!!')
+                    break;
+                case 'crt-overlay':
+                    crtOverlay()
+                    break;
+                default:
+                    addLine('Command not found!')
+            }
+            input.value = ''
+        })
+
+        function addLine(text) {
+            const line = document.createElement('p');
+            line.textContent = text;
+            response.appendChild(line);
+            response.scrollTop = response.scrollHeight;
+        }
+
+        function crtOverlay() {
+            let crt = document.getElementById('crt-overlay');
+            
+            if (crt.style.display == 'block') {
+                crt.style.display = 'none'
+                document.cookie = 'crt-overlay=False'
+            }
+            else {
+                crt.style.display = 'block'
+                document.cookie = 'crt-overlay=True'
+            }
+        }
+    </script>
+
+    <style>
+        #mini-terminal {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            top: 650px;
+            right: 100px;
+            border: 1px solid var(--grey);
+            color: var(--white);
+            background-color: var(--black);
+            overflow: hidden;
+        }
+
+        #terminal-bar {
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            background-color: var(--grey);
+            &:hover {
+                opacity: 75%;;
+            }
+            p {
+                margin: 0;
+                padding: 0 5px;
+                cursor: default;
+            }
+            #terminal-close {
+                cursor: pointer;
+            }
+        }
+
+        #terminal-response {
+            height: 155px;
+            overflow: scroll;
+            p {
+                margin: 0;
+            }
+        }
+        
+        #terminal-input {
+            padding: 0;
+            width: 300px;
+            height: 1rem;
+            position: absolute;
+            bottom: 0px;
+            outline: none;
+            color: var(--white);
+            background-color: var(--black);
+            border: 1px solid var(--grey);
+            font-family: 'VT323';
+            font-size: 18px;
+        }
+    </style>
+</div>
