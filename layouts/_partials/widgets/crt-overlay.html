@@ -1,0 +1,27 @@
+<div id="crt-overlay">
+    <style>
+        #crt-overlay {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: linear-gradient(var(--black), var(--black), var(--grey), var(--grey));
+            background-size: cover;
+            background-size: 100% 3px;
+            opacity: 10%;
+            z-index: 1000;
+            pointer-events: none;
+        }
+    </style>
+    <script>
+        let crt = document.getElementById('crt-overlay');
+
+        if (document.cookie.includes('crt-overlay=False')) {
+            crt.style.display = 'none'
+        }
+        else {
+            crt.style.display = 'block'
+        }
+    </script>
+</div>
