@@ -1,7 +1,8 @@
 ---
 title: cs30
-layout: cs30
 date: 2026-03-02T11:43:00
+tags: []
+discussion: true
 ---
 
 Ik heb mijn homeserver 'cs30' genoemd, geïnspireerd door de [gehackte server in Mr.Robot](https://mrrobot.fandom.com/wiki/Mr._Robot#:~:text=single%20infected%20server%2C-,CS30,-.%20On%20it%2C%20he).
