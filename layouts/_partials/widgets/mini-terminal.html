@@ -20,7 +20,7 @@
         let isDragging = false;
 
         bar.addEventListener('mousedown', (e) => {
-            e.preventDefault()
+            e.preventDefault();
             isDragging = true;
             offsetX = e.clientX - terminal.offsetLeft;
             offsetY = e.clientY - terminal.offsetTop;
@@ -42,7 +42,7 @@
         const closeButton = document.getElementById('terminal-close');
 
         closeButton.addEventListener('click', (e) => {
-            terminal.style.display = 'none'
+            terminal.style.display = 'none';
         })
     </script>
     
@@ -60,13 +60,13 @@
                     response.innerHTML = ''
                     break;
                 case 'hi':
-                    addLine('Hiii!!')
+                    addLine('Hiii!!');
                     break;
                 case 'crt-overlay':
-                    crtOverlay()
+                    crtOverlay();
                     break;
                 default:
-                    addLine('Command not found!')
+                    addLine('Command not found!');
             }
             input.value = ''
         })
@@ -82,12 +82,12 @@
             let crt = document.getElementById('crt-overlay');
             
             if (crt.style.display == 'block') {
-                crt.style.display = 'none'
-                document.cookie = 'crt-overlay=False'
+                crt.style.display = 'none';
+                document.cookie = 'crt-overlay=False';
             }
             else {
-                crt.style.display = 'block'
-                document.cookie = 'crt-overlay=True'
+                crt.style.display = 'block';
+                document.cookie = 'crt-overlay=True';
             }
         }
     </script>
