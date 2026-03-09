@@ -22,9 +22,12 @@
                 {{ end }}
                 {{ end }}
             </section>
+            {{ end }}
+            {{ if .Page.Params.Discussion }}
             <section>
                 {{ partial "disqus.html" . }}
             </section>
+            {{ end }}
         </main>
         {{ partial "widgets/crt-overlay" }}
         {{ partial "footer" }}
