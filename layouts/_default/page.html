@@ -14,13 +14,12 @@
                 <p><i>{{ i18n "Posted-on" }} {{ .Date.Format "2 Jan 2006 15u04" }}</i></p>
                 {{ .Content }}
             </section>
+            {{ with .Page.Params.Tags }}
             <section>
-                {{ with .Page.Params.Tags }}
-                <h2>Tags:</h2>
-                {{ range . }}
-                <a href='{{ relLangURL "/tags" }}/{{ . }}'>{{ . }}</a>
-                {{ end }}
-                {{ end }}
+            <h2>Tags:</h2>
+            {{ range . }}
+            <a href='{{ relLangURL "/tags" }}/{{ . }}'>{{ . }}</a>
+            {{ end }}
             </section>
             {{ end }}
             {{ if .Page.Params.Discussion }}
