@@ -33,7 +33,7 @@ body {
     code {
         font-family: 'VT323';
     }
-    p:has(code) {
+    p:has(code), pre:has(code) {
         padding: 5px;
         border: 1px dotted var(--grey);
     }
