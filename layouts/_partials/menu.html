@@ -7,6 +7,15 @@
         <a href='{{ relLangURL "/solitaire"}}'>{{ i18n "Solitaire" }}</a>
         <a href='{{ relLangURL "/guestbook" }}'>{{ i18n "Guestbook" }}</a>
     </nav>
+    {{ with resources.Get "img/NyanCat.gif" }}
+    <img src="{{ .RelPermalink }}" onclick="playAudio()" title="Refresh page to stop ;)" alt="Nyan Cat GIF" height="16px" style="position: relative; top: -38px; cursor: pointer;">
+    {{ end }}
+    <script>
+        function playAudio() {
+            var audio = new Audio('https://github.com/andreasdelabie/andreasdelabie.neocities.org/raw/refs/heads/main/assets/audio/NyanCat.mp3');
+            audio.play();
+        }
+    </script>
     <nav class="langswitcher">
         <a href="/en">en</a>
         <a href="/nl">nl</a>
