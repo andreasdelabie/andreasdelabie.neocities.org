@@ -1,6 +1,7 @@
 # MENU
 Home = 'Home'
 Blog = 'Blog'
+Tags = 'Tags'
 Inspiration = 'Inspiratie'
 Solitaire = 'Solitaire'
 Guestbook = 'Gastenboek'

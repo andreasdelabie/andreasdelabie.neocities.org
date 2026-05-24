@@ -16,9 +16,9 @@
             </section>
             {{ with .Page.Params.Tags }}
             <section>
-            <h2>Tags:</h2>
+            <h2>{{ i18n "Tags" }}:</h2>
             {{ range . }}
-            <a href='{{ relLangURL "/tags" }}/{{ . }}'>{{ . }}</a>
+                <a href='{{ relLangURL "/tags" }}/{{ . }}'>{{ . }}</a>
             {{ end }}
             </section>
             {{ end }}
