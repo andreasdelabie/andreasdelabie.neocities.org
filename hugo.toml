@@ -4,9 +4,9 @@ timeZone = 'Europe/Brussels'
 
 [languages]
   [languages.en]
-    languageCode = 'en'
+    locale = 'en'
   [languages.nl]
-    languageCode = 'nl-BE'
+    locale = 'nl-BE'
 
 [services]
   [services.disqus]
