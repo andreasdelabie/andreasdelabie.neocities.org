@@ -13,5 +13,8 @@ build:
 {{< youtube id=gpum4bdeZ0o >}}
 🎬 Vivlia — Shortfilm I made in my last year of high school at kunsthumaniora Sint-Lucas Ghent
 
+{{< youtube id=OYrBzXmR1Ko >}}
+🎬 Opus Magnum — Shortfilm I made in my first year on filmschool Narafi (Brussels)
+
 {{< youtube id=KweWIQUX-C8 >}}
 🎤 J'existe — Music video I made for a classmate of mine
