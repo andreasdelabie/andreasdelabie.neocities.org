@@ -11,4 +11,4 @@ build:
     - Geen spam/advertenties
     - Geen expliciete/illegale content
 - Respecteer de gedeelde ruimte, houd plaats voor anderen
-- Heb plezier en wees creatief!
+- Heb plezier en wees creatief! ![star](/emoticon/star.gif)

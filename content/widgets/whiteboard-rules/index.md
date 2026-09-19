@@ -11,4 +11,4 @@ build:
     - No spam/advertising
     - No explicit/illegal content
 - Respect the shared space, leave room for others
-- Have fun and be creative!
+- Have fun and be creative! ![star](/emoticon/star.gif)
