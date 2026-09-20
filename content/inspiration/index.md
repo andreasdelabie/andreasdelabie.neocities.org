@@ -1,6 +1,6 @@
 ---
 title: Inspiration
-date: 2026-03-09T20:25:00
+date: 2026-09-20T14:08:00
 tags: []
 discussion: true
 ---
@@ -10,6 +10,7 @@ discussion: true
 - [Felix van Groeningen](https://www.imdb.com/name/nm0886976/)
 - [Wes Anderson](https://www.imdb.com/name/nm0027572)
 - [Yorgos Lanthimos](https://www.imdb.com/name/nm0487166/)
+
 ### Photographers
 - [handek35mm (Jazz Brak)](https://www.instagram.com/handek35mm/)
 - [Stella Daelman](https://www.instagram.com/stelladmphotography/)
@@ -34,11 +35,18 @@ discussion: true
 
 ---
 
+## Games
+- [lily's world XD](https://store.steampowered.com/app/3195580/lilys_world_XD/) — Dude this game was insane
+- [Koira](https://store.steampowered.com/app/1626620/Koira/) — Won (and deserved) Belgian Game of the Year 2025
+
+---
+
 ## Websites
 ### Filmmaking
 - [shot.cafe](https://shot.cafe/) — Small but really good curated film still library
 - [filmvibes.io](https://filmvibes.io/) — AI powered film still/fragment library
 - [eyecannndy.com](https://eyecannndy.com/) — Inspiration library with camera/editing/vfx techniques
+
 ### Webdesign
 - [checklist.design](https://www.checklist.design/) — Checklist for designing websites, web components, UX flows, brands, ...
 - [lawsofux.com](https://lawsofux.com/) — Collection of UX best practices
