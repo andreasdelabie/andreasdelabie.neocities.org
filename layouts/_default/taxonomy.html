@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Locale }}">
+<head>
+    <meta charset="UTF-8">
+    {{ partial "head" . }}
+</head>
+<body>
+    <div class="container">
+        {{ partial "logo" }}
+        {{ partial "menu" }}
+        <main>
+            <section>
+                {{ .Content }}
+                <ul>
+                    {{ range .Pages }}
+                    <li>
+                        <a href="{{ .RelPermalink }}">{{ .Title }} (updated: {{ .Date.Format "2 Jan 2006" }})</a>
+                        <p>{{ .Summary }}</p>
+                    </li>
+                    {{end}}
+                </ul>
+            </section>
+        </main>
+        {{ partial "widgets/crt-overlay" }}
+        {{ partial "footer" }}
+    </div>
+</body>
+</html>
