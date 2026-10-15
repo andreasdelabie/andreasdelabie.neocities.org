@@ -13,13 +13,14 @@ Ik heb mijn homeserver 'cs30' genoemd, geïnspireerd door de [gehackte server in
 - [Cloudflared](https://github.com/cloudflare/cloudflared) — Publieke toegang tot bepaalde diensten van buitenaf
 - [Dash.](https://github.com/MauriceNino/dashdot) — Server stats
 - [Changedetection](https://github.com/dgtlmoon/changedetection.io) — Detecteer website updates
+- [ConvertX](https://github.com/C4illin/ConvertX) — Super flexibele file converter
 - [Syncthing](https://github.com/syncthing/syncthing) — Mijn Obsidian Vault synchroniseren naar mijn PC, Macbook en Fairphone 5
 - [Docuseal](https://github.com/docusealco/docuseal) — Documenten ondertekenen voor klanten
 - [NocoDB](https://github.com/nocodb/nocodb) — Database met leads, netwerk contacten, klanten, en projecten (met SQLite)
 - [Mealie](https://github.com/mealie-recipes/mealie) — Kookrecepten
 - [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) — Document management/archive systeem
 - [Plex](https://www.plex.tv/personal-media-server/) & [arr-stack](https://wiki.servarr.com/)
-- [qBittorrent](https://github.com/qbittorrent/qBittorrent) — Linux ISO's etc. downloaden
+- [qBittorrent](https://github.com/qbittorrent/qBittorrent)
 - Zelfgemaakte downloadservice met Python, Flask en Nginx
 - Zelfgemaakte interne documentatie site met HUGO
 
