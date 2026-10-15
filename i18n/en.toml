@@ -14,6 +14,7 @@ Other-sites = 'Other sites'
 # PARAGRAPHS
 neocities-button-info = 'The GIF is pulled from GitHub, so you can hotlink directly!'
 Posted-on = 'Posted on'
+updated = 'updated'
 Current-time = 'Current time in Belgium'
 Current-weather = 'Weather in Belgium'
 Age = 'Age'

@@ -14,7 +14,7 @@
                 <ul>
                     {{ range .Pages }}
                     <li>
-                        <a href="{{ .RelPermalink }}">{{ .Title }} (updated: {{ .Date.Format "2 Jan 2006" }})</a>
+                        <a href="{{ .RelPermalink }}">{{ .Title }} ({{ i18n "updated" }}: {{ .Date.Format "2 Jan 2006" }})</a>
                         <p>{{ .Summary }}</p>
                     </li>
                     {{end}}
