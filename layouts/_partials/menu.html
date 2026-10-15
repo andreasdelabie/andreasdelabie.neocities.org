@@ -9,7 +9,7 @@
         <a href='{{ relLangURL "/guestbook" }}'>{{ i18n "Guestbook" }}</a>
     </nav>
     {{ with resources.Get "img/NyanCat.gif" }}
-    <img src="{{ .RelPermalink }}" onclick="playAudio()" title="Refresh page to stop ;)" alt="Nyan Cat GIF" height="16px" style="position: relative; top: -38px; cursor: pointer;">
+    <img src="{{ .RelPermalink }}" onclick="playAudio()" title="Refresh page to stop ;)" alt="Nyan Cat GIF" height="16px" style="position: relative; top: -42px; cursor: pointer;">
     {{ end }}
     <script>
         function playAudio() {
